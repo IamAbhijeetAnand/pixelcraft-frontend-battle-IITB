@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft - Award-Winning Design Studio</title>
+    <meta name="description" content="PixelCraft - Award-winning design studio creating exceptional digital experiences that drive results and inspire users worldwide.">
+    <meta name="keywords" content="web design, development, UI/UX, mobile apps, digital marketing, SEO">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-dot"></div>
+                <div class="spinner-outer"></div>
+            </div>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#hero" class="brand-link">PixelCraft</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i data-lucide="moon" class="theme-icon"></i>
+                </button>
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="star" class="badge-icon"></i>
+                    Award-winning design studio
+                </div>
+                
+                <h1 class="hero-title">
+                    We Craft Amazing
+                    <br>
+                    <span id="animated-text" class="animated-text">Digital Experiences</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Transform your vision into reality with our cutting-edge design and development services. 
+                    We create digital experiences that captivate, engage, and convert.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        View Our Work
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i data-lucide="play" class="btn-icon"></i>
+                        Our Services
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    We offer comprehensive digital solutions to help your business thrive in the digital age
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Create stunning, user-centered designs that engage and convert. From wireframes to high-fidelity prototypes.
+                    </p>
+                    <ul class="service-features">
+                        <li>User Research</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Design Systems</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Build responsive, fast, and scalable web applications using modern technologies and best practices.
+                    </p>
+                    <ul class="service-features">
+                        <li>Frontend Development</li>
+                        <li>Backend APIs</li>
+                        <li>Database Design</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3 class="service-title">Mobile Apps</h3>
+                    <p class="service-description">
+                        Develop native and cross-platform mobile applications that deliver exceptional user experiences.
+                    </p>
+                    <ul class="service-features">
+                        <li>iOS Development</li>
+                        <li>Android Development</li>
+                        <li>React Native</li>
+                        <li>App Store Optimization</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Improve your search engine rankings and drive organic traffic with our comprehensive SEO strategies.
+                    </p>
+                    <ul class="service-features">
+                        <li>Technical SEO</li>
+                        <li>Content Strategy</li>
+                        <li>Link Building</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">
+                        Grow your online presence with data-driven marketing campaigns across all digital channels.
+                    </p>
+                    <ul class="service-features">
+                        <li>Social Media Marketing</li>
+                        <li>PPC Campaigns</li>
+                        <li>Email Marketing</li>
+                        <li>Conversion Optimization</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="service-title">Security & Maintenance</h3>
+                    <p class="service-description">
+                        Keep your digital assets secure and running smoothly with our ongoing maintenance and security services.
+                    </p>
+                    <ul class="service-features">
+                        <li>Security Audits</li>
+                        <li>Regular Updates</li>
+                        <li>Backup Solutions</li>
+                        <li>24/7 Monitoring</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">
+                    Explore our latest projects and see how we've helped businesses achieve their digital goals
+                </p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i data-lucide="filter"></i>
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i data-lucide="filter"></i>
+                    Web Development
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <i data-lucide="filter"></i>
+                    Mobile Apps
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i data-lucide="filter"></i>
+                    Design
+                </button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">E-commerce Platform</h3>
+                            <span class="portfolio-category">web</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Modern e-commerce platform with advanced filtering and payment integration.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-147413.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mobile Banking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">Mobile Banking App</h3>
+                            <span class="portfolio-category">mobile</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Secure mobile banking application with biometric authentication.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">Brand Identity Design</h3>
+                            <span class="portfolio-category">design</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Complete brand identity design for a tech startup.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Adobe Creative Suite</span>
+                            <span class="tech-tag">Branding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SaaS Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">SaaS Dashboard</h3>
+                            <span class="portfolio-category">web</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Analytics dashboard with real-time data visualization.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fitness Mobile App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">Fitness Mobile App</h3>
+                            <span class="portfolio-category">mobile</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Comprehensive fitness tracking app with social features.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">ML Kit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/196658/pexels-photo-196658.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creative Portfolio Site">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="portfolio-title">Creative Portfolio Site</h3>
+                            <span class="portfolio-category">design</span>
+                        </div>
+                        <p class="portfolio-description">
+                            Interactive portfolio website for a creative agency.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-subtitle">
+                    Our talented team of designers, developers, and strategists work together to bring your vision to life
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+    <div class="member-image">
+        <img src="assets/Abhijeet.jpg" alt="Abhijeet Anand">
+        <div class="member-overlay">
+            <div class="member-social">
+                <a href="https://www.linkedin.com/in/abhijeet-anand-5a52b0290/" target="_blank" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://x.com/_Abhijeet11" target="_blank" class="social-link">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="https://github.com/IamAbhijeetAnand" target="_blank" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="member-info">
+        <h3 class="member-name">Abhijeet Anand</h3>
+        <p class="member-role">Lead Developer</p>
+        <p class="member-bio">
+            Full-stack developer passionate about creating scalable web applications and clean code.
+        </p>
+    </div>
+</div>
+
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/aryanPicture.jpg" alt="Aryan Gupta">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i data-lucide="twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Aryan Gupta</h3>
+                        <p class="member-role">Creative Director</p>
+                        <p class="member-bio">
+                             Leading creative vision with 10+ years of experience in digital design and brand strategy.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/kaifPicture.jpg" alt="Md. Kaif">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i data-lucide="twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Md. Kaif</h3>
+                        <p class="member-role">UX Designer</p>
+                        <p class="member-bio">
+                            User experience specialist focused on creating intuitive and accessible digital experiences.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it. Here's what our satisfied clients have to say about working with us
+                </p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-main">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote id="testimonial-content" class="testimonial-content">
+                        "PixelCraft transformed our digital presence completely. Their attention to detail and innovative approach exceeded our expectations. The team delivered a stunning website that increased our conversions by 150%."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img id="testimonial-image" src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Jennifer Walsh" class="author-image">
+                        <div class="author-info">
+                            <h4 id="testimonial-name" class="author-name">Jennifer Walsh</h4>
+                            <p id="testimonial-role" class="author-role">CEO, TechStart Inc.</p>
+                            <div class="author-rating">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button id="prev-testimonial" class="testimonial-btn">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button id="next-testimonial" class="testimonial-btn">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>    
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Get answers to the most common questions about our services and process
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>What services do you offer?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive digital solutions including UI/UX design, web development, mobile app development, digital marketing, SEO optimization, and ongoing maintenance and support services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a typical project take?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on complexity and scope. A simple website might take 2-4 weeks, while a complex web application or mobile app could take 3-6 months. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you work with businesses of all sizes?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with startups, small businesses, and enterprise clients. Our scalable approach allows us to tailor our services to meet the specific needs and budgets of businesses at any stage.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your design and development process?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our process includes discovery and planning, design and prototyping, development and testing, client review and feedback, final revisions, and launch. We maintain transparent communication throughout each phase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide ongoing support after launch?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive post-launch support including regular updates, security monitoring, performance optimization, and technical support. We have various maintenance packages to suit different needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Still have questions? We'd love to help!</p>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Start a Conversation</h2>
+                <p class="section-subtitle">
+                    Ready to bring your vision to life? Get in touch with us and let's discuss how we can help your business grow
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Get in Touch</h3>
+                        <p>We're here to help you every step of the way. Whether you have a question about our services, want to discuss a project, or just want to say hello, we'd love to hear from you.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="contact-label">Email us at</p>
+                                <p class="contact-value">hello@pixelcraft.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="contact-label">Call us at</p>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="contact-label">Visit us at</p>
+                                <p class="contact-value">123 Creative Street<br>Design District, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="office-hours">
+                        <h4>Office Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="form-success hidden">
+                        <i data-lucide="check-circle" class="success-icon"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">PixelCraft</h3>
+                    <p class="footer-description">
+                        Creating exceptional digital experiences that drive results and inspire users worldwide.
+                    </p>
+                    <div class="footer-love">
+                        <span>Made with</span>
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <span>in New York</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#team">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <ul class="footer-contact">
+                        <li>hello@pixelcraft.com</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>123 Creative Street<br>Design District, NY 10001</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-sm">Start Project</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 PixelCraft. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <button id="scroll-to-top" class="scroll-to-top">
+                        <i data-lucide="arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
